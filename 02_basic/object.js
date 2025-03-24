@@ -46,8 +46,44 @@ jsuser.greeting2= function(){
 }
 console.log(jsuser.greeting2());
 
+//part2
+
+const tinderuser= new Object()
+tinderuser.id="123abc"
+tinderuser.name="sam"
+tinderuser.islogin=true
+console.log(tinderuser);
+
+const reg={
+    email:"hariom",
+    fullname: {
+        username: {
+            firstname:"preet",
+            secondname:"sharma"
+         }
+    }
+}
+console.log(reg.fullname.username.firstname);
 
 
+const obj1={1:"a",2:"b"}
+const obj2={3:"a",4:"d"}
+const obj3={obj1,obj2}
+console.log(obj3); //same problem of array 
 
+//use assign to solve this merge this
+const obj4=Object.assign({},obj1,obj2); //agar hum {} nhi denge toh eska mtlb hai sab obj 1 mein ja rha hai
+console.log(obj4);
+console.log(obj4===obj1); //false because of {} 
 
+const obj5=Object.assign(obj1,obj2); 
+console.log(obj5===obj1); //true because {} nhi laga hua hai obj1 mein sab aa jayega 
 
+//instead of assign we use spread
+const obj6={...obj1,...obj2}
+// console.log(obj6);
+
+console.log(Object.keys(tinderuser));
+console.log(Object.values(tinderuser));
+console.log(Object.entries(tinderuser));
+console.log(Object.hasOwn('islogin')); //false
