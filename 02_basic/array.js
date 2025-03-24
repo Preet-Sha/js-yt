@@ -35,3 +35,9 @@ console.log(myn2);
 //splice originally affect the array whereas the slice will not do any thing to the array
 //in splice the given portion is removed from the array leaving array with non given elements(index)
 
+
+
+//functions
+
+
+
