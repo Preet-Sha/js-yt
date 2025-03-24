@@ -36,3 +36,32 @@ function userlogin(name){ //hum userdefined data bhi de sakhte the name="preet"
 }
 console.log(userlogin("preetsharma"));
 console.log(userlogin()); //kuch pass nhi kiya toh undefined aata hai null nhi 
+
+// how to use multiple parameter in once withput mentioning it like in cart value we have to add all the price of the product we buy 
+// we use rest / spread operator
+
+function calculatePrice(...num){ //jitna bhi item hai bundle mein pack karo aur dedo ye hi kaam hai ... ka 
+    return num //array ke ander add ho jayega
+}
+// console.log(calculatePrice(200,300,400));
+
+const user={
+    username:"preet",
+    price:"999"
+}
+function handleObject(any){
+    console.log(`username is ${any.username} and price is ${any.price}`);
+    
+}
+handleObject(user)
+//alternate of doing this 
+handleObject({
+    username:"kitama",
+    price:"342"
+})
+//array pass kar sakhe hai esme 
+const arr=[200,2432,342,25,11342]
+function ret(getarr){
+    return getarr[2]
+}
+console.log(ret(arr));
