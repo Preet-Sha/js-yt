@@ -35,3 +35,25 @@ const myFunction = function(){
 console.log(typeof anotherId);
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3
+
+
+
+//Stack (Primitive ) copy milta hai 
+// Heap (Non-Primitive ) refrences milta hai 
+let yt="invader"
+let another=yt
+another="chai"
+console.log(yt) //invader
+console.log(another); //chai
+
+let user={
+    email:"user@gmail.com",
+    upi: "userq"
+}
+let user2=user
+user2.email = "preestys"
+console.log(user.email); //preestys
+console.log(user2.email); //preestys
+
+
+
