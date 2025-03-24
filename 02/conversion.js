@@ -18,3 +18,5 @@ console.log(val);
  let string = String(some);
 console.log(string);
 console.log(typeof string);
+
+
