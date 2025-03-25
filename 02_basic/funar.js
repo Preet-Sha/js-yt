@@ -21,7 +21,7 @@ const real=other.flat(Infinity)
 console.log(real);
 
 
-//convert to ARRAY ASND CHECK WHETHER IT IS ARRAY OR NOT 
+//convert to ARRAY AND CHECK WHETHER IT IS ARRAY OR NOT 
 
 console.log(Array.isArray("preet")); //false
 console.log(Array.from("Preet")); //convert into array ['p','r','e','e','t']
