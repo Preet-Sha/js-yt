@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul class="language">
+        <li>javascript</li>
+    </ul>
+    
+</body>
+<script>
+    function addi(name){
+        const li=document.createElement('li')
+        li.innerHTML=`${name}`
+        document.querySelector('.language').appendChild(li)
+
+    }
+    addi("pyhton")
+
+    //optimise way to do this 
+
+    function optiadd(name){
+        const li=document.createElement('li')
+        li.appendChild(document.createTextNode(name))
+        document.querySelector('.language').appendChild(li)
+    }
+    optiadd('cpp')
+
+
+    //edit the content 
+    const editor=document.querySelector('li:nth-child(2)')
+    editor.innerHTML="mojo";
+
+    //m-2 edit
+
+    const newli=document.createElement('li');
+    newli.textContent="heroisme"
+    editor.replaceWith(newli)
+
+
+    //m-3 edit
+
+    const firstlang=document.querySelector('li:first-child')
+    firstlang.outerHTML='<li>mein hoo kon</li>'
+    
+
+    //remove : just use remove()
+
+    const lastchild=document.querySelector('li:last-child')
+    lastchild.remove()
+</script>
+
+</html>
